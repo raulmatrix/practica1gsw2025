@@ -49,12 +49,12 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#team">Team</a></li>
+          <li><a href="home.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="team.html">Team</a></li>
           <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
@@ -72,91 +72,20 @@
               <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="#about">Get Started</a>
+      <a class="btn-getstarted" href="about.html">Get Started</a>
 
     </div>
   </header>
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row align-items-center mb-5">
-          <div class="col-lg-6 mb-4 mb-lg-0">
-            <div class="badge-wrapper mb-3">
-              <div class="d-inline-flex align-items-center rounded-pill border border-accent-light">
-                <div class="icon-circle me-2">
-                  <i class="bi bi-bell"></i>
-                </div>
-                <span class="badge-text me-3">Innovative Solutions</span>
-              </div>
-            </div>
-
-            <h1 class="hero-title mb-4">Accelerating business growth through innovative technology</h1>
-
-            <p class="hero-description mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo.</p>
-
-            <div class="cta-wrapper">
-              <a href="#" class="btn btn-primary">Discover More</a>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="hero-image">
-              <img src="assets/img/illustration/illustration-16.webp" alt="Business Growth" class="img-fluid" loading="lazy">
-            </div>
-          </div>
-        </div>
-
-        <div class="row feature-boxes">
-          <div class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="feature-box">
-              <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
-                <i class="bi bi-gear"></i>
-              </div>
-              <div class="feature-content">
-                <h3 class="feature-title">Rapid Deployment</h3>
-                <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="feature-box">
-              <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
-                <i class="bi bi-window"></i>
-              </div>
-              <div class="feature-content">
-                <h3 class="feature-title">Advanced Security</h3>
-                <p class="feature-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
-            <div class="feature-box">
-              <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
-                <i class="bi bi-headset"></i>
-              </div>
-              <div class="feature-content">
-                <h3 class="feature-title">Dedicated Support</h3>
-                <p class="feature-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Hero Section -->
+    <!-- Home Section -->
+    <div id="home section"></div>
 
     <!-- About Section -->
     <section id="about" class="about section">
@@ -1388,6 +1317,8 @@
   <!-- Preloader -->
   <div id="preloader"></div>
 
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
@@ -1399,6 +1330,21 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+
+
+  <!-- Script para cargar secciones -->
+  <script>
+    $(document).ready(function () {
+      $('#home section').load('home.html');
+      $('#about section').load('about.html');
+      $('#services section').load('services.html');
+      $('#portfolio section').load('portfolio.html');
+      $('#pricing section').load('pricing.html');
+      $('#team section').load('team.html');
+      $('#contact section').load('contact.html');
+    });
+  </script>
 
 </body>
 
