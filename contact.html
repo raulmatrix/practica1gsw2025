@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Hero Section</title>
+
+  <!-- CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+            <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="home.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 mb-5">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="info-card">
+              <div class="icon-box">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <h3>Our Address</h3>
+              <p>2847 Rainbow Road, Springfield, IL 62701, USA</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="info-card">
+              <div class="icon-box">
+                <i class="bi bi-telephone"></i>
+              </div>
+              <h3>Contact Number</h3>
+              <p>Mobile: +1 (555) 123-4567<br>
+                Email: info@example.com</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="info-card">
+              <div class="icon-box">
+                <i class="bi bi-clock"></i>
+              </div>
+              <h3>Opening Hour</h3>
+              <p>Monday - Saturday: 9:00 - 18:00<br>
+                Sunday: Closed</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="form-wrapper" data-aos="fade-up" data-aos-delay="400">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <div class="input-group">
+                      <span class="input-group-text"><i class="bi bi-person"></i></span>
+                      <input type="text" name="name" class="form-control" placeholder="Your name*" required="">
+                    </div>
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <div class="input-group">
+                      <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                      <input type="email" class="form-control" name="email" placeholder="Email address*" required="">
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-md-6 form-group">
+                    <div class="input-group">
+                      <span class="input-group-text"><i class="bi bi-phone"></i></span>
+                      <input type="text" class="form-control" name="phone" placeholder="Phone number*" required="">
+                    </div>
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <div class="input-group">
+                      <span class="input-group-text"><i class="bi bi-list"></i></span>
+                      <select name="subject" class="form-control" required="">
+                        <option value="">Select service*</option>
+                        <option value="Service 1">Consulting</option>
+                        <option value="Service 2">Development</option>
+                        <option value="Service 3">Marketing</option>
+                        <option value="Service 4">Support</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group mt-3">
+                    <div class="input-group">
+                      <span class="input-group-text"><i class="bi bi-chat-dots"></i></span>
+                      <textarea class="form-control" name="message" rows="6" placeholder="Write a message*" required=""></textarea>
+                    </div>
+                  </div>
+                  <div class="my-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit">Submit Message</button>
+                  </div>
+
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- /Contact Section -->
+
+
+  <!-- JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- AOS re-init por si cargas por JS -->
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
